@@ -1,0 +1,40 @@
+.doctor-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: box-shadow 0.2s;
+}
+
+.doctor-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.status.available-today {
+  color: green;
+}
+
+.status.fully-booked {
+  color: red;
+}
+
+.status.on-leave {
+  color: orange;
+}
